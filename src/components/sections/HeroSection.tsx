@@ -9,7 +9,7 @@ function HeroSection() {
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
-				transition={{ duration: 1 }}>
+				transition={{ duration: 0.5 }}>
 				<div className='pt-32 md:pt-4'>
 					<p className='text-[1.128rem] font-[700] text-primary uppercase mb-4'>
 						Best Destinations around the world
