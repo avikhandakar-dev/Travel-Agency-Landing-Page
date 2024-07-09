@@ -1,62 +1,71 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import CatergoryCard from "../cards/CatergoryCard";
 
-function CategorySection() {
-  const features = [
-    {
-      id: 0,
-      iconUrl: "/images/satellite.png",
-      title: "Calculated Weather",
-      description:
-        "Built Wicket longer admire do barton vanity itself do in it.",
-      highlighted: false,
-    },
-    {
-      id: 1,
-      iconUrl: "/images/aircraft.png",
-      title: "Best Flights",
-      description:
-        "Engrossed listening. Park gate sell they west hard for the.",
-      highlighted: true,
-    },
-    {
-      id: 2,
-      iconUrl: "/images/mic.png",
-      title: "Local Events",
-      description:
-        "Barton vanity itself do in it. Preferd to men it engrossed listening. ",
-      highlighted: false,
-    },
-    {
-      id: 3,
-      iconUrl: "/images/cog.png",
-      title: "Customization",
-      description:
-        "We deliver outsourced aviation services for military customers",
-      highlighted: false,
-    },
-  ];
-  return (
-    <section>
-      <p className="text-lightGray text-[1.125rem] font-[600] text-center">
-        Category
-      </p>
-      <p className="volkhov text-[3.125rem] text-title font-[700] text-center">
-        We Offer Best Services
-      </p>
-      <div className="flex flex-col gap-4 md:flex-row justify-between w-full mt-16">
-        {features.map((feature) => (
-          <CatergoryCard
-            key={feature.id}
-            iconUrl={feature.iconUrl}
-            title={feature.title}
-            description={feature.description}
-            highlighted={feature.highlighted}
-          />
-        ))}
-      </div>
-    </section>
-  );
-}
+const CategorySection: React.FC = () => {
+	const features = [
+		{
+			id: 0,
+			iconUrl: "/images/ticketing.svg",
+			title: "Air Ticketing",
+			description:
+				"We offer competitive prices on air tickets for domestic and international flights.",
+			highlighted: false,
+		},
+		{
+			id: 1,
+			iconUrl: "/images/aircraft.png",
+			title: "Best Flights",
+			description: "We ensuring your travel is cost-effective and convenient.",
+			highlighted: true,
+		},
+		{
+			id: 2,
+			iconUrl: "/images/visa.svg",
+			title: "Visa Processing",
+			description:
+				"We simplifies the visa process and support to secure your visa efficiently.",
+			highlighted: false,
+		},
+		{
+			id: 3,
+			iconUrl: "/images/tour.svg",
+			title: "Tour Packages",
+			description:
+				"Discover the world with our carefully curated tour packages.",
+			highlighted: false,
+		},
+	];
+
+	return (
+		<section className='lg:pt-20'>
+			<p className='text-lightGray text-[1.125rem] font-[600] text-center'>
+				Services
+			</p>
+			<p className='volkhov text-[3.125rem] text-title font-[700] text-center'>
+				We Offer Best Services
+			</p>
+			<div className='flex flex-col gap-4 md:flex-row justify-between w-full mt-16'>
+				{features.map((feature) => (
+					<motion.div
+						key={feature.id}
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.5 }}>
+						<CatergoryCard
+							key={feature.id}
+							iconUrl={feature.iconUrl}
+							title={feature.title}
+							description={feature.description}
+							highlighted={feature.highlighted}
+						/>
+					</motion.div>
+				))}
+			</div>
+		</section>
+	);
+};
 
 export default CategorySection;
