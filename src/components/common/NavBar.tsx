@@ -43,13 +43,13 @@ function NavBar() {
 						<p
 							className={`hover:text-primary text-navText font-[600] cursor-pointer flex items-center gap-2`}>
 							Bookings
-						</p>
+						</p> */}
 
 						<Link
-							href='/auth/login'
+							href='/about'
 							className='hover:text-primary text-navText font-[600] cursor-pointer flex items-center gap-2 '>
-							Login
-						</Link> */}
+							About Us
+						</Link>
 
 						<MainButton
 							text='Contact Us'
@@ -72,7 +72,14 @@ function NavBar() {
 				} `}>
 				<div className='flex justify-between mx-[10px]'>
 					<div className='flex gap-[50px] text-[16px] items-center select-none'>
-						<img src='/images/logo.png' alt='logo' className='w-[7rem]' />
+						<Link href={"/"}>
+							<Image
+								src='/images/logo.png'
+								width={140}
+								height={60}
+								alt='logo'
+							/>
+						</Link>
 					</div>
 					<div className='flex items-center gap-[40px]'>
 						{menu ? (
@@ -116,7 +123,11 @@ function NavBar() {
 									className='hover:text-white text-navText font-[600] cursor-pointer flex items-center gap-2 '>
 									Login
 								</Link> */}
-
+								<Link
+									href='/about'
+									className='hover:text-primary text-navText font-[600] cursor-pointer flex items-center gap-2 '>
+									About Us
+								</Link>
 								<MainButton
 									text='Contact Us'
 									classes='bg-secondary hover:bg-secondary text-white font-[600] shadow-none rounded-normal border border-none hover:text-white'

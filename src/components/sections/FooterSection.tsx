@@ -13,7 +13,7 @@ function FooterSection() {
 	const currentYear = new Date().getFullYear();
 	return (
 		<section>
-			<div className='flex flex-col justify-evenly md:flex-row   gap-8'>
+			<div className='flex relative poppins px-4  md:px-[9rem] flex-col justify-evenly md:flex-row  mt-20  gap-8'>
 				<div className=' lg:w-[40%]'>
 					<p>
 						<a href='https://parenterprise.net/'>

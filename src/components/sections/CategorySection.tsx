@@ -17,16 +17,17 @@ const CategorySection: React.FC = () => {
 		{
 			id: 1,
 			iconUrl: "/images/aircraft.png",
-			title: "Best Flights",
-			description: "We ensuring your travel is cost-effective and convenient.",
+			title: "Best Flight Deals",
+			description:
+				"Find special flight deals with us and discover your favourite destination around the world and in Bangladesh.",
 			highlighted: true,
 		},
 		{
 			id: 2,
-			iconUrl: "/images/visa.svg",
+			iconUrl: "/images/visa.jpg",
 			title: "Visa Processing",
 			description:
-				"We simplifies the visa process and support to secure your visa efficiently.",
+				"Find special flight deals with us and discover your favourite destination around the world and in Bangladesh.",
 			highlighted: false,
 		},
 		{
@@ -34,20 +35,35 @@ const CategorySection: React.FC = () => {
 			iconUrl: "/images/tour.svg",
 			title: "Tour Packages",
 			description:
-				"Discover the world with our carefully curated tour packages.",
+				"Discover the Signature Of Excellence of our best tour packages for local and international destinations.",
+			highlighted: false,
+		},
+		{
+			id: 4,
+			iconUrl: "/images/insurance.png",
+			title: "Travel Insurance",
+			description: "Protect yourself from unwanted expenses.",
+			highlighted: false,
+		},
+		{
+			id: 5,
+			iconUrl: "/images/airport_transfer.png",
+			title: "Airport Transfer",
+			description:
+				"We provide the safe airport transfer from/to Hazrat Shahjalal International Airport to all over Bangladesh in collaboration with <a href='https://www.garibook.com' class='underline-link' target='_blank' rel='noopener noreferrer'>Garibook.com</a>",
 			highlighted: false,
 		},
 	];
 
 	return (
-		<section className='lg:pt-20'>
-			<p className='text-lightGray text-[1.125rem] font-[600] text-center'>
+		<section className='lg:pt-20 pb-20'>
+			<p className='text-lightGray text-[1.125rem] font-[600] text-center md:text-[1rem] lg:text-[1.125rem]'>
 				Services
 			</p>
-			<p className='volkhov text-[3.125rem] text-title font-[700] text-center'>
-				We Offer Best Services
+			<p className='volkhov text-[2rem] text-title font-[700] text-center md:text-[2.5rem] lg:text-[3.125rem]'>
+				We Offer The Best Services
 			</p>
-			<div className='flex flex-col gap-4 md:flex-row justify-between w-full mt-16'>
+			<div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 justify-items-center w-full mt-4 md:mt-16'>
 				{features.map((feature) => (
 					<motion.div
 						key={feature.id}

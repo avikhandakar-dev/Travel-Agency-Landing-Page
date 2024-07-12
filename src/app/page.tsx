@@ -11,9 +11,8 @@ import TopSellingSection from "@/components/sections/TopSellingSection";
 export default function Home() {
 	return (
 		<main>
-			<NavBar />
 			<div className='relative poppins  md:px-[9rem] '>
-				<div className='px-4 flex flex-col gap-[7.69rem]'>
+				<div className='px-4 flex flex-col '>
 					<HeroSection />
 					<div className='absolute top-0 right-0 -z-10'>
 						<img src='/images/blob-shape.png' alt='blob background shape' />
@@ -24,7 +23,7 @@ export default function Home() {
 							alt='blob background shape'
 						/>
 					</div>
-					<div className='relative'>
+					<div className='relative pt-20 mt-10'>
 						<CategorySection />
 						<div className='absolute top-0 right-0'>
 							<img src='/images/plus-group.png' alt='blob background shape' />
@@ -36,7 +35,6 @@ export default function Home() {
 					{/* <TestimonialSection /> */}
 					{/* <LogoGroupSection /> */}
 					<NewsLetterSection />
-					<FooterSection />
 				</div>
 			</div>
 		</main>

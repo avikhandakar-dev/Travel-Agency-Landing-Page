@@ -10,7 +10,7 @@ const containerVariants = {
 		opacity: 1,
 		transition: {
 			duration: 0.5,
-			delayChildren: 0.3,
+			delayChildren: 0.5,
 			staggerChildren: 0.2,
 		},
 	},
@@ -24,7 +24,7 @@ const itemVariants = {
 function NewsLetterSection() {
 	return (
 		<motion.div
-			className='bg-[#DFD7F9] px-2 py-[4rem] lg:p-[4rem] lg:my-28 rounded-[1.25rem] rounded-tl-extraLarge relative lg:-mt-[10rem]'
+			className='bg-[#DFD7F9]  px-2 py-[4rem] lg:p-[4rem] lg:my-28 rounded-[1.25rem] rounded-tl-extraLarge relative'
 			variants={containerVariants}
 			initial='hidden'
 			whileInView='visible'>

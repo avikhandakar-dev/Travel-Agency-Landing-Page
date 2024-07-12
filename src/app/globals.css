@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 .poppins {
-  font-family: Poppins, sans-serif;
+	font-family: Poppins, sans-serif;
 }
 
 .volkhov {
-  font-family: Volkhov;
+	font-family: Volkhov;
 }
 
 .red-gradient {
-  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+	background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+}
+.underline-link {
+	text-decoration: underline;
 }

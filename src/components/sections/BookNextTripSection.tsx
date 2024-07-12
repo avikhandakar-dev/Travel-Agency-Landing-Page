@@ -69,7 +69,7 @@ const imageVariants: Variants = {
 
 const BookNextTripSection: React.FC = () => {
 	return (
-		<section className='flex justify-between flex-col md:flex-row items-center mt-[-5rem] lg:mb-10 lg:py-40'>
+		<section className='flex justify-between flex-col md:flex-row items-center  lg:mb-10 lg:pt-40'>
 			<div>
 				<motion.p
 					className='text-lightGray text-[1.125rem] font-[600] text-left'
