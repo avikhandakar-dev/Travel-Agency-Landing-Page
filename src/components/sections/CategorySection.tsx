@@ -47,10 +47,10 @@ const CategorySection: React.FC = () => {
 		},
 		{
 			id: 5,
-			iconUrl: "/images/airport_transfer.png",
-			title: "Airport Transfer",
+			iconUrl: "/images/garibook.png",
+			title: "Who we are?",
 			description:
-				"We provide the safe airport transfer from/to Hazrat Shahjalal International Airport to all over Bangladesh in collaboration with <a href='https://www.garibook.com' class='underline-link' target='_blank' rel='noopener noreferrer'>Garibook.com</a>",
+				"<a href='https://www.garibook.com' class='underline-link' target='_blank' rel='noopener noreferrer'>Garibook</a> is more than a ride; we're the architects of transformative journeys. Our passion for innovation, reliability, and affordability defines every trip.",
 			highlighted: false,
 		},
 	];
