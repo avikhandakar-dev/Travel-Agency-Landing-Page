@@ -51,10 +51,12 @@ function NavBar() {
 							About Us
 						</Link>
 
-						<MainButton
-							text='Contact Us'
-							classes='bg-secondary hover:bg-secondary text-white font-[600] shadow-none rounded-normal border border-none hover:text-white'
-						/>
+						<Link href='/contact-us'>
+							<MainButton
+								text='Contact Us'
+								classes='bg-secondary hover:bg-secondary text-white font-[600] shadow-none rounded-normal border border-none hover:text-white'
+							/>{" "}
+						</Link>
 
 						{/* <div className='flex gap-2 items-center cursor-pointer'>
 							<p className='font-[700]'>EN</p>

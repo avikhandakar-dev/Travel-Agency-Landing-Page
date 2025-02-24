@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import {
 	FaPhone,
@@ -32,6 +33,30 @@ function FooterSection() {
 						seamless and enjoyable journeys.
 					</p>
 				</div>
+				<div className='flex gap-8 mb-10 pr-20 w-[16rem] flex-grow flex-col'>
+					<p className='font-bold text-lg'>More Info</p>
+					<ul className='list-none text-lightGray flex flex-col gap-4'>
+						<li className='flex items-start gap-2'>
+							<div className=''>
+								<Link
+									href='privacy-policy'
+									className='text-primary items-start'>
+									Privacy Policy
+								</Link>
+							</div>
+						</li>
+						<li className='flex items-start gap-2'>
+							<div className=''>
+								<Link
+									href='terms-of-service'
+									className='text-primary items-start'>
+									Terms of Service
+								</Link>
+							</div>
+						</li>
+					</ul>
+				</div>
+
 				<div className='flex gap-8 mb-10 flex-grow flex-col'>
 					<p className='font-bold text-lg'>Contact Us</p>
 					<ul className='list-none text-lightGray flex flex-col gap-4'>
